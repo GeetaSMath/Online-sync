@@ -1,10 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Virtual - Online Tuition & Coding Academy</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-dark: #3730a3;
+            --accent: #06b6d4;
+            --bg-gradient: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--bg-gradient);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: -30px auto 40px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .badge {
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            margin-top: 0;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 8px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .price-box {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .price-box.highlight {
+            border-color: var(--accent);
+            background: #ecfeff;
+        }
+
+        .price-box h3 {
+            margin: 0 0 5px;
+            font-size: 1.1rem;
+            color: #1e293b;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #9ca3af;
+            font-size: 0.9rem;
+            margin-right: 8px;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        input:focus, select:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+        }
+
+        button.submit-btn {
+            width: 100%;
+            background: var(--bg-gradient);
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        button.submit-btn:hover {
+            opacity: 0.9;
+        }
+
+        .contact-footer {
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 20px;
+        }
+
+        .contact-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <header>
+        <h1>Class Virtual</h1>
+        <p>Interactive Online Tuition & Special Coding Classes</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <span class="badge">🔥 STRICTLY LIMITED: ONLY 5 STUDENTS PER BATCH</span>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>100% Concentration:</strong> Ultra-small batches of max 5 students for personalized attention.</li>
+                <li><strong>Daily Regular Sessions:</strong> 1.5 Hours comprehensive daily coaching (7:00 PM to 9:00 PM slot choice).</li>
+                <li><strong>Special Saturday Coding:</strong> Dedicated Java, Python, and Logical Building sessions for Grades 6 to 9.</li>
+            </ul>
+
+            <h2 style="margin-top: 25px;">Special Fee Structure</h2>
+            <div class="pricing-grid">
+                <div class="price-box">
+                    <h3>Classes 1st to 5th (Regular Tuition)</h3>
+                    <div><span class="old-price">₹2,000</span> <span class="price">₹1,500 / month</span></div>
+                </div>
+                <div class="price-box highlight">
+                    <h3>Classes 6th to 9th (Tuition + Coding)</h3>
+                    <div><span class="old-price">₹2,500</span> <span class="price">₹2,000 / month</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Immediate Join Application</h2>
+            <p style="font-size: 13px; color: #6b7280; margin-bottom: 20px;">Fill out this quick form to reserve your seat in our upcoming batch.</p>
+
+            <form action="https://formspree.io/f/geetasmath@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="studentName">Student Full Name</label>
+                    <input type="text" id="studentName" name="studentName" required placeholder="Enter student name">
+                </div>
+
+                <div class="form-group">
+                    <label for="studentClass">Select Class / Standard</label>
+                    <select id="studentClass" name="studentClass" required>
+                        <option value="">-- Choose Standard --</option>
+                        <option value="Class 1">Class 1 (₹1,500/mo)</option>
+                        <option value="Class 2">Class 2 (₹1,500/mo)</option>
+                        <option value="Class 3">Class 3 (₹1,500/mo)</option>
+                        <option value="Class 4">Class 4 (₹1,500/mo)</option>
+                        <option value="Class 5">Class 5 (₹1,500/mo)</option>
+                        <option value="Class 6">Class 6 + Coding (₹2,000/mo)</option>
+                        <option value="Class 7">Class 7 + Coding (₹2,000/mo)</option>
+                        <option value="Class 8">Class 8 + Coding (₹2,000/mo)</option>
+                        <option value="Class 9">Class 9 + Coding (₹2,000/mo)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sessionChoice">Choose Program Option</label>
+                    <select id="sessionChoice" name="sessionChoice" required>
+                        <option value="">-- Select Option --</option>
+                        <option value="Regular Tuition Only">Regular Tuition Only (1.5 Hours)</option>
+                        <option value="Tuition + Saturday Coding">Tuition + Saturday Coding (Java, Python, Logic)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="timing">Preferred Batch Timing (Between 7:00 PM - 9:00 PM)</label>
+                    <input type="text" id="timing" name="timing" required placeholder="e.g., 7:00 PM to 8:30 PM">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Parent WhatsApp / Phone Number</label>
+                    <input type="tel" id="contact" name="contact" required placeholder="10-digit mobile number">
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application Now</button>
+            </form>
+        </div>
+
+        <div class="contact-footer">
+            Need immediate help? Call us at <strong>9108661607</strong> / <strong>9448443615</strong><br>
+            Email: <a href="mailto:geetasmath@gmail.com">geetasmath@gmail.com</a>
+        </div>
+    </div>
 </body>
 </html>
